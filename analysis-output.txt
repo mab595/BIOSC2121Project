@@ -1,0 +1,42 @@
+                            mean    std.dev n
+Control (Cells Alone) 1917.70912 1263.94739 6
+Hypoxia Control         14.68519   13.36412 6
+IL-13 100 ng/mL)       670.47762  165.13317 6
+IL-33 (100 ng/mL)      853.06773  279.13131 6
+TNF (20ng/mL)         2957.60150  323.41200 6
+RStudioGD 
+        2 
+Analysis of Variance Table
+
+Response: count
+          Df   Sum Sq Mean Sq F value    Pr(>F)    
+treatment  4 32254760 8063690  22.306 6.085e-08 ***
+Residuals 25  9037601  361504                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] 0.7811314
+
+	Pairwise comparisons using t tests with pooled SD 
+
+data:  circadian$count and circadian$treatment 
+
+                  Control (Cells Alone) Hypoxia Control IL-13 100 ng/mL) IL-33 (100 ng/mL)
+Hypoxia Control   0.00011               -               -                -                
+IL-13 100 ng/mL)  0.01397               0.70522         -                -                
+IL-33 (100 ng/mL) 0.05138               0.23370         1.00000          -                
+TNF (20ng/mL)     0.06101               8.0e-08         6.7e-06          2.5e-05          
+
+P value adjustment method: bonferroni 
+
+	Pairwise comparisons using t tests with pooled SD 
+
+data:  circadian$count and circadian$treatment 
+
+                  Control (Cells Alone) Hypoxia Control IL-13 100 ng/mL) IL-33 (100 ng/mL)
+Hypoxia Control   7.5e-05               -               -                -                
+IL-13 100 ng/mL)  0.0084                0.1410          -                -                
+IL-33 (100 ng/mL) 0.0257                0.0701          0.6035           -                
+TNF (20ng/mL)     0.0257                8.0e-08         6.0e-06          2.0e-05          
+
+P value adjustment method: holm 
+Some more stuff here...
